@@ -1,5 +1,4 @@
 /// Goldilocks field: F_p where p = 2^64 - 2^32 + 1
-
 use std::fmt;
 use std::ops::{Add, Div, Mul, Neg, Sub};
 
@@ -46,7 +45,7 @@ impl Fp {
         self.0
     }
 
-    /// self^exp 
+    /// self^exp
     pub fn pow(self, mut exp: u64) -> Self {
         let mut base = self;
         let mut result = Fp::ONE;
@@ -234,7 +233,12 @@ mod tests {
             assert_eq!(omega.pow(n).value(), 1, "omega^{} != 1", n);
             // And omega^{n/2} should NOT be 1 (primitive root)
             if n > 1 {
-                assert_ne!(omega.pow(n / 2).value(), 1, "omega is not primitive for order {}", n);
+                assert_ne!(
+                    omega.pow(n / 2).value(),
+                    1,
+                    "omega is not primitive for order {}",
+                    n
+                );
             }
         }
     }
