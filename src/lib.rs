@@ -6,3 +6,4 @@ pub mod air;
 pub mod polynomial;
 pub mod domain;
 pub mod merkle;
+pub mod channel;
