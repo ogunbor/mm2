@@ -5,3 +5,4 @@ pub mod vm;
 pub mod air;
 pub mod polynomial;
 pub mod domain;
+pub mod merkle;
