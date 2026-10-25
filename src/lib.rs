@@ -7,3 +7,4 @@ pub mod polynomial;
 pub mod domain;
 pub mod merkle;
 pub mod channel;
+pub mod fri;
