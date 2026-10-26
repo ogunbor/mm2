@@ -10,3 +10,4 @@ pub mod channel;
 pub mod fri;
 pub mod prover;
 pub mod verifier;
+pub mod programs;
