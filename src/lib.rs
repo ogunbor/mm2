@@ -8,3 +8,5 @@ pub mod domain;
 pub mod merkle;
 pub mod channel;
 pub mod fri;
+pub mod prover;
+pub mod verifier;
