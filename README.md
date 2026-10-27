@@ -32,34 +32,34 @@ MM2 includes:
 
 ## ISA — 8 Instructions, 7 Registers
 
-| Opcode     | Code | Description           |
-|------------|------|-----------------------|
-| `NOP`      | 0    | No-op (padding only)  |
-| `IMM`      | 1    | `rd = immediate`      |
-| `ADD`      | 2    | `rd = rs1 + rs2`      |
-| `MUL`      | 3    | `rd = rs1 * rs2`      |
-| `SUB`      | 4    | `rd = rs1 - rs2`      |
-| `HALT`     | 5    | Stop execution        |
-| `ADDI`     | 6    | `rd = rs1 + immediate`|
-| `ASSERT_EQ`| 7    | Require `rs1 == rs2`  |
+| Opcode      | Code | Description            |
+| ----------- | ---- | ---------------------- |
+| `NOP`       | 0    | No-op (padding only)   |
+| `IMM`       | 1    | `rd = immediate`       |
+| `ADD`       | 2    | `rd = rs1 + rs2`       |
+| `MUL`       | 3    | `rd = rs1 * rs2`       |
+| `SUB`       | 4    | `rd = rs1 - rs2`       |
+| `HALT`      | 5    | Stop execution         |
+| `ADDI`      | 6    | `rd = rs1 + immediate` |
+| `ASSERT_EQ` | 7    | Require `rs1 == rs2`   |
 
 ## Modules
 
-| Module         | Description                                      |
-|----------------|--------------------------------------------------|
-| `field.rs`     | Goldilocks field arithmetic (`Fp`)               |
-| `instruction.rs`| ISA definition (opcodes, instruction struct)     |
-| `trace.rs`     | Execution trace (46 columns per row)             |
-| `vm.rs`        | Virtual machine execution                        |
-| `air.rs`       | 49 algebraic constraints (degree ≤ 3)            |
-| `polynomial.rs`| Polynomial interpolation, evaluation, division   |
-| `domain.rs`    | Trace and LDE evaluation domains                 |
-| `merkle.rs`    | SHA-256 Merkle tree commitments                  |
-| `channel.rs`   | Fiat-Shamir transcript (non-interactive proofs)  |
-| `fri.rs`       | FRI low-degree testing (30 queries)              |
-| `prover.rs`    | STARK prover (8x blowup, Merkle + FRI)           |
-| `verifier.rs`  | STARK verifier (no re-execution needed)          |
-| `programs.rs`  | Demo programs (Nicomachus's theorem)             |
+| Module           | Description                                     |
+| ---------------- | ----------------------------------------------- |
+| `field.rs`       | Goldilocks field arithmetic (`Fp`)              |
+| `instruction.rs` | ISA definition (opcodes, instruction struct)    |
+| `trace.rs`       | Execution trace (46 columns per row)            |
+| `vm.rs`          | Virtual machine execution                       |
+| `air.rs`         | 49 algebraic constraints (degree ≤ 3)           |
+| `polynomial.rs`  | Polynomial interpolation, evaluation, division  |
+| `domain.rs`      | Trace and LDE evaluation domains                |
+| `merkle.rs`      | SHA-256 Merkle tree commitments                 |
+| `channel.rs`     | Fiat-Shamir transcript (non-interactive proofs) |
+| `fri.rs`         | FRI low-degree testing (30 queries)             |
+| `prover.rs`      | STARK prover (8x blowup, Merkle + FRI)          |
+| `verifier.rs`    | STARK verifier (no re-execution needed)         |
+| `programs.rs`    | Demo programs (Nicomachus's theorem)            |
 
 ## Running
 
@@ -86,3 +86,9 @@ npm run dev
 ```
 
 See `frontend/README.md` for details.
+
+### Contributors
+
+- Chidubemkingsley
+- Olugbenga Ayoola
+- Jerry
