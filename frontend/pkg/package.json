@@ -1,0 +1,15 @@
+{
+  "name": "mm2",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "mm2_bg.wasm",
+    "mm2.js",
+    "mm2.d.ts"
+  ],
+  "main": "mm2.js",
+  "types": "mm2.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
