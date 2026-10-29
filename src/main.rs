@@ -20,7 +20,7 @@ fn show(i: &Instruction) -> String {
 
 fn main() {
     println!("Field: Goldilocks (p = 2^64 - 2^32 + 1)");
-    println!("ISA: 8 instructions (NOP, IMM, ADD, MUL, SUB, HALT, ADDI, ASSERT_EQ), 7 registers");
+    println!("ISA: 8 instructions (NOP, IMM, ADD, MUL, SUB, HALT, ADDI, ASSERT_EQ), 5 registers");
     println!("Proof system: STARK with FRI\n");
 
     // Step 1: Define a program
