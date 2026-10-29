@@ -30,7 +30,7 @@ MM2 includes:
 
 **Goldilocks field**: `F_p` where `p = 2^64 - 2^32 + 1`
 
-## ISA — 8 Instructions, 5 Registers
+## ISA — 8 Instructions, 7 Registers
 
 | Opcode      | Code | Description            |
 | ----------- | ---- | ---------------------- |
