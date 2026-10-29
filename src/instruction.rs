@@ -1,6 +1,6 @@
 //! 8-instruction ISA
 
-pub const NUM_REGS: usize = 7;
+pub const NUM_REGS: usize = 4;
 
 /// The eight opcodes.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -54,7 +54,7 @@ impl Instruction {
     }
 
     pub fn imm(rd: u8, value: u64) -> Self {
-        assert!((rd as usize) < NUM_REGS, "register index must be 0–6");
+        assert!((rd as usize) < NUM_REGS, "register index must be 0–3");
         Instruction {
             opcode: Opcode::Imm,
             rd,
