@@ -39,7 +39,7 @@ Everything in MM2 is **cryptographically real**. No mocking, no hardcoded values
 
 The real virtual machine runs your program instruction-by-instruction:
 
-- Initializes 5 registers to zero
+- Initializes 7 registers to zero
 - Steps through each instruction (IMM, ADD, MUL, SUB, ADDI, ASSERT_EQ, HALT)
 - Records every state change into an **execution trace** (46 columns per row)
 - Each row captures: clock cycle, program counter, opcode, register file, read values, write value, one-hot flags
@@ -181,7 +181,7 @@ Output: `mm2_bg.wasm` (207 KB) — this IS the Rust code, compiled.
 ```
 src/
 ├── field.rs        # Goldilocks field Fp (p = 2^64 - 2^32 + 1)
-├── instruction.rs  # 8-opcode ISA, 5 registers
+├── instruction.rs  # 8-opcode ISA, 7 registers
 ├── trace.rs        # Execution trace (46 columns per row)
 ├── vm.rs           # Virtual machine execution
 ├── air.rs          # 49 algebraic constraints (degree ≤ 3)
